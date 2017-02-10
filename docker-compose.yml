@@ -1,0 +1,10 @@
+version: '2'
+services:
+  condo_telegram_bot:
+    build: .
+    env_file: .env
+
+networks:
+  default:
+    external:
+      name: petprojects_default
